@@ -1,0 +1,27 @@
+{
+  "name": "brightact-example-typescript",
+  "version": "1.0.0",
+  "description": "example for brightact team",
+  "scripts": {
+    "postinstall": "webdriver-manager update && tsc",
+    "test": "protractor ./config/protractor.conf.js",
+    "tsc": "tsc"
+  },
+  "keywords": [
+    "example",
+    "typescript",
+    "protractor"
+  ],
+  "author": "Ihnatiuk Oleksii",
+  "license": "ISC",
+  "dependencies": {
+    "protractor": "^5.1.2",
+    "typescript": "2.4.1"
+  },
+  "devDependencies": {
+    "jasmine": "^2.6.0",
+    "@types/jasmine": "^2.5.53",
+    "@types/node": "^8.0.7",
+    "jasmine-spec-reporter": "^4.1.1"
+  }
+}
