@@ -18,7 +18,8 @@ let conf: Config = {
                 displayStacktrace: true
             }
         }));
-    }
+    },
+    SELENIUM_PROMISE_MANAGER: false
 };
 
 exports.config = conf;

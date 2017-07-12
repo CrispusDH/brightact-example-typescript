@@ -6,6 +6,6 @@ describe('this is example with typescript', async () => {
 
     it('should have a valid url', async () => {
         await googlePage.openSite('PageObject - Martin Fowler');
-        expect(browser.getCurrentUrl()).toContain('https://martinfowler.com/bliki/PageObject.html');
+        expect(browser.getCurrentUrl()).toEqual('https://martinfowler.com/bliki/PageObject.html');
     });
 });
