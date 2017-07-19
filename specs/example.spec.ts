@@ -4,8 +4,12 @@ import {browser} from "protractor";
 describe('this is example with typescript', async () => {
     let googlePage = new GooglePage();
 
-    it('should have a valid url', async () => {
+    beforeEach(async () => {
         await googlePage.openSite('PageObject - Martin Fowler');
-        expect(browser.getCurrentUrl()).toEqual('https://martinfowler.com/bliki/PageObject.html');
     });
+
+    it('should have a valid url', async () => {
+        await expect(browser.getCurrentUrl()).toBe('https://martinfowler.com/bliki/PageObject.html');
+    });
+
 });
